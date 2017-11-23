@@ -56,9 +56,9 @@ Below are the list of tasks that are implemented:
      
          https://activityperson.herokuapp.com/database_init
 
-2) Clone the client github repository to your local machine-
+2) Clone the client github repository to your local machine -
 
-Client github repository: https://github.com/surbhisonkiya/introsde-2017-assignment-2-client.git
+       Client github repository: https://github.com/surbhisonkiya/introsde-2017-assignment-2-client.git
 
 3) In the terminal, navigate to the path where you have cloned the repository on your local machine. 
 4) Execute below command in the terminal -
