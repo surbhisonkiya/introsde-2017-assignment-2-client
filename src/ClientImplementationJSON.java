@@ -296,31 +296,32 @@ public class ClientImplementationJSON {
         		+ "Body: " + "\n" +response9);	
         
         // Step 3.10. 
-        Object entity10 = "{\"activityId\":"+newActivityId+", \"name\":\"Swimming\",\"description\":\"Swimming in the river\",\"place\":\"Cauvery river\",\"type\":\"Sport\",\"startdate\":1514447400000}";		
+        Object entity10 = "{\"activityId\":"+newActivityId+", \"name\":\"Swimming\",\"description\":\"Swimming in the river\",\"place\":\"Adige river\",\"type\":\"Travel\",\"startdate\":1514447400000}";		
         Response servResponse10a = service.path("person").path(String.valueOf(first_person_id)).path("SPORT").path(String.valueOf(newActivityId)).request().accept(MediaType.APPLICATION_JSON).header("Content-type","application/json").get();
         String response10a = servResponse10a.readEntity(String.class);
         JSONArray array10a = new JSONArray(response10a);
-        String initialPlace = array10a.getJSONObject(0).getString("place");
+        String initialType = array10a.getJSONObject(0).getString("type");
       
         System.out.println("\nRequest#3.10");
         
-        Response servResponse10 = service.path("person").path(String.valueOf(first_person_id)).path("SPORT").path(String.valueOf(newActivityId)).request().accept(MediaType.APPLICATION_JSON).header("Content-type","application/json").put(Entity.json(entity10));
+        Response servResponse10 = service.path("person").path(String.valueOf(first_person_id)).path("TRAVEL").path(String.valueOf(newActivityId)).request().accept(MediaType.APPLICATION_JSON).header("Content-type","application/json").put(Entity.json(entity10));
         String response10 = servResponse10.readEntity(String.class);
 
-        Response servResponse10b = service.path("person").path(String.valueOf(first_person_id)).path("SPORT").path(String.valueOf(newActivityId)).request().accept(MediaType.APPLICATION_JSON).header("Content-type","application/json").get();
+        Response servResponse10b = service.path("person").path(String.valueOf(first_person_id)).path("TRAVEL").path(String.valueOf(newActivityId)).request().accept(MediaType.APPLICATION_JSON).header("Content-type","application/json").get();
         String response10b = servResponse10b.readEntity(String.class);
         JSONArray array10b = new JSONArray(response10b);
-        String modifiedPlace = array10b.getJSONObject(0).getString("place");
+        String modifiedType = array10b.getJSONObject(0).getString("type");
            
-        System.out.println("modifiedPlace: "+ modifiedPlace);
-        System.out.println("initialPlace: "+ initialPlace);
-        if (!modifiedPlace.equals(initialPlace)) {
+	System.out.println("Initial activity type: "+ initialType);
+        System.out.println("Modified activity type: "+ modifiedType);
+		
+        if (!modifiedType.equals(initialType)) {
         	result = "OK";
         }else {
         	result = "ERROR";
         }
         System.out.println("\nRequest #10:" + "\n"
-        		+ "PUT /person/" + first_person_id + "/SPORT" + "/" + newActivityId +" Accept: APPLICATION/JSON Content-Type: APPLICATION/JSON" + "\n"
+        		+ "PUT /person/" + first_person_id + "/TRAVEL" + "/" + newActivityId +" Accept: APPLICATION/JSON Content-Type: APPLICATION/JSON" + "\n"
         		+ "=> Result: " + result +  "\n"
         		+ "=> HTTP Status: " + servResponse10.getStatus() + " " + servResponse10.getStatusInfo() + "\n"
         		+ "Body: " + "\n" + response10);	        
