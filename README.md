@@ -20,7 +20,7 @@ About the code:
 
 The system supports the output of the application in XML and JSON.
 
-For each of the requests mentioned below, send the request first with the Accept and Content-type (for POST/PUT requests) headers both set to Application/XML and then both set to Application/JSON. After receiving the response, the output is printed in the console.
+For each of the requests mentioned below, send the request first with the Accept and Content-type (for POST/PUT requests) headers both set to Application/XML and then both set to Application/JSON. After receiving the response, the output is printed in the console. Also, output of Application/XML is recorded in a file named "client-server-xml.log" and output of Application/JSON is recorded in a file named "client-server-json.log".
  
 Below are the list of tasks that are implemented:
 
@@ -64,7 +64,8 @@ Below are the list of tasks that are implemented:
 4) Execute below command in the terminal -
 
          ant execute.client
-
+         
+5) Check the output in the newly generated files named "client-server-xml.log" and "client-server-json.log".
 *********************************************************************************************************************************
 
 # Additional Notes: 
