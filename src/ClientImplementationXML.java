@@ -103,8 +103,7 @@ public class ClientImplementationXML {
        
    
         // Step 3.2.
-        System.out.println("\nRequest#3.2");
-        
+        System.out.println("\nRequest#3.2");        
         Response servResponse2 = service.path("person").path(String.valueOf(first_person_id)).request().accept(MediaType.APPLICATION_XML).header("Content-type","application/xml").get();
         String response2 = servResponse2.readEntity(String.class);
         Document document2 = loadXMLFromString(response2);
@@ -305,8 +304,7 @@ public class ClientImplementationXML {
         }
         
         //3.8.
-        System.out.println("\nRequest#3.8");
-        
+        System.out.println("\nRequest#3.8");        
         Response servResponse8 = service.path("person").path(String.valueOf(first_person_id)).path(type).path(String.valueOf(activityId)).request().accept(MediaType.APPLICATION_XML).header("Content-type","application/xml").get();
         String response8 = servResponse8.readEntity(String.class);
         if (servResponse8.getStatus()==200) {
@@ -368,33 +366,33 @@ public class ClientImplementationXML {
         				"<description>Swimming in the river</description>\n" + 
         				"<activityId>"+newActivityId + "</activityId>\n"+
         				"<name>Swimming</name>\n" + 
-        				"<place>Cauvery river</place>\n" + 
+        				"<place>Adige river</place>\n" + 
         				"<startdate>2017-12-28T08:50:00+01:00</startdate>\n" + 
-        				"<type>SPORT</type>\n" + 
+        				"<type>TRAVEL</type>\n" + 
         				"</activity>";
         Response servResponse10a = service.path("person").path(String.valueOf(first_person_id)).path("SPORT").path(String.valueOf(newActivityId)).request().accept(MediaType.APPLICATION_XML).header("Content-type","application/xml").get();
         String response10a = servResponse10a.readEntity(String.class);
         Document document10a = loadXMLFromString(response10a);
-        String initialPlace = document10a.getElementsByTagName("activity").item(0).getChildNodes().item(2).getTextContent();
+        String initialType = document10a.getElementsByTagName("activity").item(0).getChildNodes().item(4).getTextContent();
        
         System.out.println("\nRequest#3.10");
         
-        Response servResponse10 = service.path("person").path(String.valueOf(first_person_id)).path("SPORT").path(String.valueOf(newActivityId)).request().accept(MediaType.APPLICATION_XML).header("Content-type","application/xml").put(Entity.xml(entity10));
+        Response servResponse10 = service.path("person").path(String.valueOf(first_person_id)).path("TRAVEL").path(String.valueOf(newActivityId)).request().accept(MediaType.APPLICATION_XML).header("Content-type","application/xml").put(Entity.xml(entity10));
         String response10 = servResponse10.readEntity(String.class);
 
-        Response servResponse10b = service.path("person").path(String.valueOf(first_person_id)).path("SPORT").path(String.valueOf(newActivityId)).request().accept(MediaType.APPLICATION_XML).header("Content-type","application/xml").get();
+        Response servResponse10b = service.path("person").path(String.valueOf(first_person_id)).path("TRAVEL").path(String.valueOf(newActivityId)).request().accept(MediaType.APPLICATION_XML).header("Content-type","application/xml").get();
         String response10b = servResponse10b.readEntity(String.class);
         Document document10b = loadXMLFromString(response10b);
-        String modifiedPlace = document10b.getElementsByTagName("activity").item(0).getChildNodes().item(2).getTextContent();       
-        System.out.println("modifiedPlace: "+ modifiedPlace);
-        System.out.println("initialPlace: "+ initialPlace);
-        if (!modifiedPlace.equals(initialPlace)) {
+        String modifiedType = document10b.getElementsByTagName("activity").item(0).getChildNodes().item(4).getTextContent();       
+        System.out.println("Initial activity type: "+ initialType);
+        System.out.println("Modified activity type: "+ modifiedType);
+        if (!modifiedType.equals(initialType)) {
         	result = "OK";
         }else {
         	result = "ERROR";
         }
         System.out.println("\nRequest#10:" + "\n"
-        		+ "PUT /person/" + first_person_id + "/SPORT" + "/" + newActivityId +" Accept: APPLICATION/XML Content-Type: APPLICATION/XML" + "\n"
+        		+ "PUT /person/" + first_person_id + "/TRAVEL" + "/" + newActivityId +" Accept: APPLICATION/XML Content-Type: APPLICATION/XML" + "\n"
         		+ "=> Result: " + result +  "\n"
         		+ "=> HTTP Status: " + servResponse10.getStatus() + " " + servResponse10.getStatusInfo() + "\n"
         		+ "Body: " + "\n" +format(response10));	        
