@@ -151,7 +151,6 @@ public class ClientImplementationXML {
 		System.out.println("\nRequest#3.3");
         
         Response servResponse3a = service.path("person").path(String.valueOf(first_person_id)).request().accept(MediaType.APPLICATION_XML).header("Content-type","application/xml").put(Entity.xml(entity3));
-        //String response3 = servResponse3a.readEntity(String.class);
         Response servResponse3b = service.path("person").path(String.valueOf(first_person_id)).request().accept(MediaType.APPLICATION_XML).header("Content-type","application/xml").get();
         String response3b = servResponse3b.readEntity(String.class);
         Document document3 = loadXMLFromString(response3b);
@@ -363,7 +362,7 @@ public class ClientImplementationXML {
         		+ "=> HTTP Status: " + servResponse9.getStatus() + " " + servResponse9.getStatusInfo() + "\n"
         		+ "Body: " + "\n" +format(response9));	
         
-        // Step 3.10. EXTRA
+        // Step 3.10. 
         Object entity10 = 
         		"<activity>\n" + 
         				"<description>Swimming in the river</description>\n" + 
@@ -400,9 +399,7 @@ public class ClientImplementationXML {
         		+ "=> HTTP Status: " + servResponse10.getStatus() + " " + servResponse10.getStatusInfo() + "\n"
         		+ "Body: " + "\n" +format(response10));	        
 
-
-        //http://localhost:5900/person/1/SPORT?before=2017-12-28T08:50:00&after=2017-11-11T00:00:00
-        // Step 3.11. EXTRA
+        // Step 3.11. 
         System.out.println("\nRequest#3.11");
         
     	Response servResponse11 = service.path("person").path(String.valueOf(first_person_id)).path(type).queryParam("before", "2017-12-28T08:50:00").queryParam("after", "2017-10-10T08:50:00").request().accept(MediaType.APPLICATION_XML).header("Content-type","application/xml").get();
