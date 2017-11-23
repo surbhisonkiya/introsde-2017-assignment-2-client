@@ -102,7 +102,7 @@ public class ClientImplementationJSON {
 		System.out.println("\nRequest#3.3");
         
         Response servResponse3a = service.path("person").path(String.valueOf(first_person_id)).request().accept(MediaType.APPLICATION_JSON).header("Content-type","application/json").put(Entity.json(entity3));
-        //String response3 = servResponse3a.readEntity(String.class);
+        
         Response servResponse3b = service.path("person").path(String.valueOf(first_person_id)).request().accept(MediaType.APPLICATION_JSON).header("Content-type","application/json").get();
         String response3b = servResponse3b.readEntity(String.class);
         
@@ -295,7 +295,7 @@ public class ClientImplementationJSON {
         		+ "=> HTTP Status: " + servResponse9.getStatus() + " " + servResponse9.getStatusInfo() + "\n"
         		+ "Body: " + "\n" +response9);	
         
-        // Step 3.10. EXTRA
+        // Step 3.10. 
         Object entity10 = "{\"activityId\":"+newActivityId+", \"name\":\"Swimming\",\"description\":\"Swimming in the river\",\"place\":\"Cauvery river\",\"type\":\"Sport\",\"startdate\":1514447400000}";		
         Response servResponse10a = service.path("person").path(String.valueOf(first_person_id)).path("SPORT").path(String.valueOf(newActivityId)).request().accept(MediaType.APPLICATION_JSON).header("Content-type","application/json").get();
         String response10a = servResponse10a.readEntity(String.class);
@@ -326,9 +326,7 @@ public class ClientImplementationJSON {
         		+ "Body: " + "\n" + response10);	        
 
 
-        //http://localhost:5900/person/1/SPORT?before=2017-12-28T08:50:00&after=2017-11-11T00:00:00
-       
-        // Step 3.11. EXTRA
+        // Step 3.11. 
         System.out.println("\nRequest#3.11");
         
     	Response servResponse11 = service.path("person").path(String.valueOf(first_person_id)).path(type.toUpperCase()).queryParam("before", "2017-12-28T08:50:00").queryParam("after", "2017-10-10T00:00:00").request().accept(MediaType.APPLICATION_JSON).header("Content-type","application/json").get();
