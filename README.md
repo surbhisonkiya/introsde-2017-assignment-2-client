@@ -1,6 +1,6 @@
 # introsde-2017-assignment-2-client
 
-Surbhi Sonkiya, Introduction to Service Design and Engineering, University of Trento.
+Surbhi Sonkiya
 
 Email-id: surbhi.sonkiya@studenti.unitn.it
 
@@ -12,17 +12,17 @@ Server github repository: https://github.com/surbhisonkiya/introsde-2017-assignm
 
 *********************************************************************************************************************************
 
-Project: 
+# Project: 
 
+The project provides the implementation of the system for the Univeristy to understand the preferences of their students, that can help them register students and their preferred activities. The system is capable of storing firstname, lastname, birthdate of the students and name, description, type of activity, place, start date/time about the activity preferred by the student. The University can add, read, modify and delete the information via Web (REST Services). Additionally, the results are saved in a database.
 
+About the code:
 
-Code:
+The system supports the output of the application in XML and JSON.
 
-Implements XML and JSON
-
-For each of of requests mentioned below, you have to send the request first with the Accept and Content-type (for POST/PUT requests) headers both set to Application/XML and then both set to Application/JSON. After getting the response, print the output in the console.
+For each of the requests mentioned below, send the request first with the Accept and Content-type (for POST/PUT requests) headers both set to Application/XML and then both set to Application/JSON. After receiving the response, the output is printed in the console.
  
-Tasks:
+Below are the list of tasks that are implemented:
 
 1) Print URL of the server you are calling (the server should be deployed on Heroku. It should be a URL of your partner student or of your own server if you work alone.
 
@@ -50,7 +50,7 @@ Tasks:
 
 *********************************************************************************************************************************
 
-Execution: 
+# Execution: 
 
 1) In the browser, execute the below mentioned database_init to initialize the database on the server -
      
@@ -67,6 +67,6 @@ Client github repository: https://github.com/surbhisonkiya/introsde-2017-assignm
 
 *********************************************************************************************************************************
 
-Additional Notes: 
+# Additional Notes: 
 
 Please do step 1 mentioned under Execution part. If not done, database will not be initialised and client will throw an error.
