@@ -35,7 +35,7 @@ public class ClientImplementationXML {
     	ClientConfig clientConfig = new ClientConfig();
         Client client = ClientBuilder.newClient(clientConfig);
         WebTarget service = client.target(getBaseURI());
-        System.out.println("Calling server URL: " + getBaseURI() ); //Step 1.
+        System.out.println("Calling server URL: " + getBaseURI() );
         return service;
     }
 	
@@ -103,7 +103,8 @@ public class ClientImplementationXML {
        
    
         // Step 3.2.
-        System.out.println("\nRequest#3.2");        
+        System.out.println("\nRequest#3.2");
+        
         Response servResponse2 = service.path("person").path(String.valueOf(first_person_id)).request().accept(MediaType.APPLICATION_XML).header("Content-type","application/xml").get();
         String response2 = servResponse2.readEntity(String.class);
         Document document2 = loadXMLFromString(response2);
@@ -304,7 +305,8 @@ public class ClientImplementationXML {
         }
         
         //3.8.
-        System.out.println("\nRequest#3.8");        
+        System.out.println("\nRequest#3.8");
+        
         Response servResponse8 = service.path("person").path(String.valueOf(first_person_id)).path(type).path(String.valueOf(activityId)).request().accept(MediaType.APPLICATION_XML).header("Content-type","application/xml").get();
         String response8 = servResponse8.readEntity(String.class);
         if (servResponse8.getStatus()==200) {
@@ -386,6 +388,7 @@ public class ClientImplementationXML {
         String modifiedType = document10b.getElementsByTagName("activity").item(0).getChildNodes().item(4).getTextContent();       
         System.out.println("Initial activity type: "+ initialType);
         System.out.println("Modified activity type: "+ modifiedType);
+        
         if (!modifiedType.equals(initialType)) {
         	result = "OK";
         }else {
@@ -396,6 +399,7 @@ public class ClientImplementationXML {
         		+ "=> Result: " + result +  "\n"
         		+ "=> HTTP Status: " + servResponse10.getStatus() + " " + servResponse10.getStatusInfo() + "\n"
         		+ "Body: " + "\n" +format(response10));	        
+
 
         // Step 3.11. 
         System.out.println("\nRequest#3.11");
