@@ -35,7 +35,7 @@ public class ClientImplementationXML {
     	ClientConfig clientConfig = new ClientConfig();
         Client client = ClientBuilder.newClient(clientConfig);
         WebTarget service = client.target(getBaseURI());
-        System.out.println("Calling server URL: " + getBaseURI() );
+        System.out.println("Calling server URL: " + getBaseURI());
         return service;
     }
 	
