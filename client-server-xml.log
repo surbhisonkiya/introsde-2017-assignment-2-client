@@ -1,0 +1,612 @@
+Calling server URL: https://activityperson.herokuapp.com
+
+APPLICATION/XML
+
+Request#3.1
+Total number of persons in the database: 10
+First person's ID: 1
+Last person's ID: 37
+
+Request#1:
+GET /person/ Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200 OK
+Body:
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+  <person>
+    <preferences>
+      <activitypreference>
+        <description>Squash Court in Sanbapolis</description>
+        <name>Squash</name>
+        <place>Trento</place>
+        <startdate>2017-11-10T23:00:00Z</startdate>
+        <type>SPORT</type>
+        <activityId>2</activityId>
+      </activitypreference>
+      <activitypreference>
+        <description>Jogging on Golden Gate Bridge</description>
+        <name>Jogging</name>
+        <place>San Francisco</place>
+        <startdate>2017-11-10T23:00:00Z</startdate>
+        <type>SPORT</type>
+        <activityId>3</activityId>
+      </activitypreference>
+      <activitypreference>
+        <description>Swimming in the river</description>
+        <name>Swimming</name>
+        <place>Adige river</place>
+        <startdate>2017-12-28T07:50:00Z</startdate>
+        <type>TRAVEL</type>
+        <activityId>24</activityId>
+      </activitypreference>
+    </preferences>
+    <birthDate>2017-11-10T23:00:00Z</birthDate>
+    <firstName>Rohit</firstName>
+    <lastName>Sonkiya</lastName>
+    <personId>1</personId>
+  </person>
+  <person>
+    <preferences>
+      <activitypreference>
+        <description>Salsa dance classes</description>
+        <name>Dance</name>
+        <place>Madrid</place>
+        <startdate>2017-11-24T11:34:43.855Z</startdate>
+        <type>CULTURE</type>
+        <activityId>5</activityId>
+      </activitypreference>
+      <activitypreference>
+        <description>Design Thinking Workshop</description>
+        <name>Workshop</name>
+        <place>Jaipur</place>
+        <startdate>2017-11-24T11:34:43.855Z</startdate>
+        <type>WORK</type>
+        <activityId>6</activityId>
+      </activitypreference>
+    </preferences>
+    <birthDate>2017-11-24T11:34:43.855Z</birthDate>
+    <firstName>Rohit</firstName>
+    <lastName>Prakash</lastName>
+    <personId>4</personId>
+  </person>
+  <person>
+    <preferences>
+      <activitypreference>
+        <description>Learn italian culture in CLA</description>
+        <name>Culture class</name>
+        <place>Trento</place>
+        <startdate>2017-11-24T11:34:43.876Z</startdate>
+        <type>CULTURE</type>
+        <activityId>8</activityId>
+      </activitypreference>
+      <activitypreference>
+        <description>Yoga Teacher Training Program</description>
+        <name>Yoga</name>
+        <place>Mysore</place>
+        <startdate>2017-11-24T11:34:43.876Z</startdate>
+        <type>SPORT</type>
+        <activityId>9</activityId>
+      </activitypreference>
+    </preferences>
+    <birthDate>2017-11-24T11:34:43.876Z</birthDate>
+    <firstName>Parul</firstName>
+    <lastName>Jain</lastName>
+    <personId>7</personId>
+  </person>
+  <person>
+    <preferences>
+      <activitypreference>
+        <description>Friends get-togther</description>
+        <name>Party</name>
+        <place>Sanbapolis</place>
+        <startdate>2017-11-24T11:34:43.883Z</startdate>
+        <type>SOCIAL</type>
+        <activityId>11</activityId>
+      </activitypreference>
+      <activitypreference>
+        <description>Discuss about the project</description>
+        <name>Team Meeting</name>
+        <place>Mysore</place>
+        <startdate>2017-11-24T11:34:43.883Z</startdate>
+        <type>WORK</type>
+        <activityId>12</activityId>
+      </activitypreference>
+    </preferences>
+    <birthDate>2017-11-24T11:34:43.883Z</birthDate>
+    <firstName>Hari</firstName>
+    <lastName>Jhawar</lastName>
+    <personId>10</personId>
+  </person>
+  <person>
+    <preferences>
+      <activitypreference>
+        <description>Mountain trekking and rock climbing</description>
+        <name>Trekking</name>
+        <place>Shimla</place>
+        <startdate>2017-11-24T11:34:43.888Z</startdate>
+        <type>SPORT</type>
+        <activityId>14</activityId>
+      </activitypreference>
+      <activitypreference>
+        <description>Visit historical places in the country</description>
+        <name>Travelling</name>
+        <place>Italy</place>
+        <startdate>2017-11-24T11:34:43.888Z</startdate>
+        <type>TRAVEL</type>
+        <activityId>15</activityId>
+      </activitypreference>
+    </preferences>
+    <birthDate>2017-11-24T11:34:43.888Z</birthDate>
+    <firstName>Renu</firstName>
+    <lastName>Jhalani</lastName>
+    <personId>13</personId>
+  </person>
+  <person>
+    <preferences>
+      <activitypreference>
+        <description>Squash Court in Sanbapolis</description>
+        <name>Squash</name>
+        <place>Trento</place>
+        <startdate>2017-11-24T12:03:35.116Z</startdate>
+        <type>SPORT</type>
+        <activityId>26</activityId>
+      </activitypreference>
+      <activitypreference>
+        <description>Jogging on Golden Gate Bridge</description>
+        <name>Jogging</name>
+        <place>San Francisco</place>
+        <startdate>2017-11-24T12:03:35.116Z</startdate>
+        <type>SPORT</type>
+        <activityId>27</activityId>
+      </activitypreference>
+    </preferences>
+    <birthDate>2017-11-24T12:03:35.116Z</birthDate>
+    <firstName>Surbhi</firstName>
+    <lastName>Sonkiya</lastName>
+    <personId>25</personId>
+  </person>
+  <person>
+    <preferences>
+      <activitypreference>
+        <description>Salsa dance classes</description>
+        <name>Dance</name>
+        <place>Madrid</place>
+        <startdate>2017-11-24T12:03:35.830Z</startdate>
+        <type>CULTURE</type>
+        <activityId>29</activityId>
+      </activitypreference>
+      <activitypreference>
+        <description>Design Thinking Workshop</description>
+        <name>Workshop</name>
+        <place>Jaipur</place>
+        <startdate>2017-11-24T12:03:35.830Z</startdate>
+        <type>WORK</type>
+        <activityId>30</activityId>
+      </activitypreference>
+    </preferences>
+    <birthDate>2017-11-24T12:03:35.830Z</birthDate>
+    <firstName>Rohit</firstName>
+    <lastName>Prakash</lastName>
+    <personId>28</personId>
+  </person>
+  <person>
+    <preferences>
+      <activitypreference>
+        <description>Learn italian culture in CLA</description>
+        <name>Culture class</name>
+        <place>Trento</place>
+        <startdate>2017-11-24T12:03:35.836Z</startdate>
+        <type>CULTURE</type>
+        <activityId>32</activityId>
+      </activitypreference>
+      <activitypreference>
+        <description>Yoga Teacher Training Program</description>
+        <name>Yoga</name>
+        <place>Mysore</place>
+        <startdate>2017-11-24T12:03:35.836Z</startdate>
+        <type>SPORT</type>
+        <activityId>33</activityId>
+      </activitypreference>
+    </preferences>
+    <birthDate>2017-11-24T12:03:35.836Z</birthDate>
+    <firstName>Parul</firstName>
+    <lastName>Jain</lastName>
+    <personId>31</personId>
+  </person>
+  <person>
+    <preferences>
+      <activitypreference>
+        <description>Friends get-togther</description>
+        <name>Party</name>
+        <place>Sanbapolis</place>
+        <startdate>2017-11-24T12:03:35.841Z</startdate>
+        <type>SOCIAL</type>
+        <activityId>35</activityId>
+      </activitypreference>
+      <activitypreference>
+        <description>Discuss about the project</description>
+        <name>Team Meeting</name>
+        <place>Mysore</place>
+        <startdate>2017-11-24T12:03:35.841Z</startdate>
+        <type>WORK</type>
+        <activityId>36</activityId>
+      </activitypreference>
+    </preferences>
+    <birthDate>2017-11-24T12:03:35.841Z</birthDate>
+    <firstName>Hari</firstName>
+    <lastName>Jhawar</lastName>
+    <personId>34</personId>
+  </person>
+  <person>
+    <preferences>
+      <activitypreference>
+        <description>Mountain trekking and rock climbing</description>
+        <name>Trekking</name>
+        <place>Shimla</place>
+        <startdate>2017-11-24T12:03:35.846Z</startdate>
+        <type>SPORT</type>
+        <activityId>38</activityId>
+      </activitypreference>
+      <activitypreference>
+        <description>Visit historical places in the country</description>
+        <name>Travelling</name>
+        <place>Italy</place>
+        <startdate>2017-11-24T12:03:35.846Z</startdate>
+        <type>TRAVEL</type>
+        <activityId>39</activityId>
+      </activitypreference>
+    </preferences>
+    <birthDate>2017-11-24T12:03:35.846Z</birthDate>
+    <firstName>Renu</firstName>
+    <lastName>Jhalani</lastName>
+    <personId>37</personId>
+  </person>
+</people>
+
+
+
+Request#3.2
+
+Request#2:
+GET /person/1 Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+  <preferences>
+    <activitypreference>
+      <description>Squash Court in Sanbapolis</description>
+      <name>Squash</name>
+      <place>Trento</place>
+      <startdate>2017-11-10T23:00:00Z</startdate>
+      <type>SPORT</type>
+      <activityId>2</activityId>
+    </activitypreference>
+    <activitypreference>
+      <description>Jogging on Golden Gate Bridge</description>
+      <name>Jogging</name>
+      <place>San Francisco</place>
+      <startdate>2017-11-10T23:00:00Z</startdate>
+      <type>SPORT</type>
+      <activityId>3</activityId>
+    </activitypreference>
+    <activitypreference>
+      <description>Swimming in the river</description>
+      <name>Swimming</name>
+      <place>Adige river</place>
+      <startdate>2017-12-28T07:50:00Z</startdate>
+      <type>TRAVEL</type>
+      <activityId>24</activityId>
+    </activitypreference>
+  </preferences>
+  <birthDate>2017-11-10T23:00:00Z</birthDate>
+  <firstName>Rohit</firstName>
+  <lastName>Sonkiya</lastName>
+  <personId>1</personId>
+</person>
+
+
+
+Request#3.3
+
+Request #3:
+PUT /person/1 Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 201 Created
+Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+  <preferences>
+    <activitypreference>
+      <description>Squash Court in Sanbapolis</description>
+      <name>Squash</name>
+      <place>Trento</place>
+      <startdate>2017-11-10T23:00:00Z</startdate>
+      <type>SPORT</type>
+      <activityId>2</activityId>
+    </activitypreference>
+    <activitypreference>
+      <description>Jogging on Golden Gate Bridge</description>
+      <name>Jogging</name>
+      <place>San Francisco</place>
+      <startdate>2017-11-10T23:00:00Z</startdate>
+      <type>SPORT</type>
+      <activityId>3</activityId>
+    </activitypreference>
+  </preferences>
+  <birthDate>2017-11-10T23:00:00Z</birthDate>
+  <firstName>Parul</firstName>
+  <lastName>Sonkiya</lastName>
+  <personId>1</personId>
+</person>
+
+
+Request#3.4
+
+Request#4:
+POST /person/ Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+  <preferences>
+    <activitypreference>
+      <description>Cycle from Jaipur to Ajmer</description>
+      <name>Cycle</name>
+      <place>Rajasthan</place>
+      <startdate>2017-11-10T23:00:00Z</startdate>
+      <type>SPORT</type>
+      <activityId>41</activityId>
+    </activitypreference>
+  </preferences>
+  <birthDate>2017-10-10T23:00:00Z</birthDate>
+  <firstName>Priyanka</firstName>
+  <lastName>Chopra</lastName>
+  <personId>40</personId>
+</person>
+
+New person added with id: 40
+
+Request#3.5
+
+Request#5:
+DELETE /person/40 Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 204 No Content
+
+Request#3.6
+
+Request#6:
+GET /activity_type/ Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<activityTypes>
+  <activity_type>SPORT</activity_type>
+  <activity_type>SOCIAL</activity_type>
+  <activity_type>WORK</activity_type>
+  <activity_type>TRAVEL</activity_type>
+  <activity_type>CULTURE</activity_type>
+</activityTypes>
+
+
+
+Request#3.7
+
+Request#7a: Activities for the first person: 
+
+GET /person/1/SPORT Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<activities>
+  <activity>
+    <description>Squash Court in Sanbapolis</description>
+    <name>Squash</name>
+    <place>Trento</place>
+    <startdate>2017-11-10T23:00:00Z</startdate>
+    <type>SPORT</type>
+    <activityId>2</activityId>
+  </activity>
+  <activity>
+    <description>Jogging on Golden Gate Bridge</description>
+    <name>Jogging</name>
+    <place>San Francisco</place>
+    <startdate>2017-11-10T23:00:00Z</startdate>
+    <type>SPORT</type>
+    <activityId>3</activityId>
+  </activity>
+</activities>
+
+
+GET /person/1/SOCIAL Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: ERROR
+=> HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<activities/>
+
+
+GET /person/1/WORK Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: ERROR
+=> HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<activities/>
+
+
+GET /person/1/TRAVEL Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: ERROR
+=> HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<activities/>
+
+
+GET /person/1/CULTURE Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: ERROR
+=> HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<activities/>
+
+
+
+Request#7b: Activities for the last person: 
+
+GET /person/37/SPORT Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<activities>
+  <activity>
+    <description>Mountain trekking and rock climbing</description>
+    <name>Trekking</name>
+    <place>Shimla</place>
+    <startdate>2017-11-24T12:03:35.846Z</startdate>
+    <type>SPORT</type>
+    <activityId>38</activityId>
+  </activity>
+</activities>
+
+
+GET /person/37/SOCIAL Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: ERROR
+=> HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<activities/>
+
+
+GET /person/37/WORK Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: ERROR
+=> HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<activities/>
+
+
+GET /person/37/TRAVEL Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<activities>
+  <activity>
+    <description>Visit historical places in the country</description>
+    <name>Travelling</name>
+    <place>Italy</place>
+    <startdate>2017-11-24T12:03:35.846Z</startdate>
+    <type>TRAVEL</type>
+    <activityId>39</activityId>
+  </activity>
+</activities>
+
+
+GET /person/37/CULTURE Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: ERROR
+=> HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<activities/>
+
+
+Request#7 response:
+
+Activity id saved: 2
+Activity type saved: SPORT
+
+Request#3.8
+
+Request#8:
+GET /person/1/SPORT/2 Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<activities>
+  <activity>
+    <description>Squash Court in Sanbapolis</description>
+    <name>Squash</name>
+    <place>Trento</place>
+    <startdate>2017-11-10T23:00:00Z</startdate>
+    <type>SPORT</type>
+    <activityId>2</activityId>
+  </activity>
+</activities>
+
+
+
+Request#3.9
+New Activity Id: 42
+
+Request#9:
+POST /person/1/SPORT Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<activity>
+  <description>Swimming in the river</description>
+  <name>Swimming</name>
+  <place>Adige river</place>
+  <startdate>2017-12-28T07:50:00Z</startdate>
+  <type>SPORT</type>
+  <activityId>42</activityId>
+</activity>
+
+
+Request#3.10
+Initial activity type: SPORT
+Modified activity type: TRAVEL
+
+Request#10:
+PUT /person/1/TRAVEL/42 Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<activity>
+  <description>Swimming in the river</description>
+  <name>Swimming</name>
+  <place>Adige river</place>
+  <startdate>2017-12-28T07:50:00Z</startdate>
+  <type>TRAVEL</type>
+  <activityId>42</activityId>
+</activity>
+
+
+Request#3.11
+
+Request#11:
+GET /person/1/SPORT?before=2017-12-28T08:50:00&after=2017-10-10T00:00:00 Accept: APPLICATION/XML Content-Type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200 OK
+Body: 
+<?xml version="1.0" encoding="UTF-8"?>
+<activities>
+  <activity>
+    <description>Squash Court in Sanbapolis</description>
+    <name>Squash</name>
+    <place>Trento</place>
+    <startdate>2017-11-10T23:00:00Z</startdate>
+    <type>SPORT</type>
+    <activityId>2</activityId>
+  </activity>
+  <activity>
+    <description>Jogging on Golden Gate Bridge</description>
+    <name>Jogging</name>
+    <place>San Francisco</place>
+    <startdate>2017-11-10T23:00:00Z</startdate>
+    <type>SPORT</type>
+    <activityId>3</activityId>
+  </activity>
+</activities>
+
+
