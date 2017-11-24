@@ -41,9 +41,9 @@ public class ClientImplementationJSON {
 	
 	public static String format(String json) throws IOException {
 		 ObjectMapper mapper = new ObjectMapper();
-		 Object JSON = mapper.readValue(jsonString, Object.class);
-		 String json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(JSON);
-	     return json;
+		 Object JSON = mapper.readValue(json, Object.class);
+		 String jsonNew = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(JSON);
+	     return jsonNew;
 }
 	
 	public static void main(String[] args) throws Exception {
