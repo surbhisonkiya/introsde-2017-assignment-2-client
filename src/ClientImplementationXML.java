@@ -31,7 +31,7 @@ import com.sun.org.apache.xml.internal.serialize.XMLSerializer;
 public class ClientImplementationXML {
     
 
-	public static WebTarget config() {
+	public static WebTarget config(){
     	ClientConfig clientConfig = new ClientConfig();
         Client client = ClientBuilder.newClient(clientConfig);
         WebTarget service = client.target(getBaseURI());
