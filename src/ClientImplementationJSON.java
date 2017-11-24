@@ -39,7 +39,7 @@ public class ClientImplementationJSON {
         return service;
     }
 	
-	public static String format(String jsonString) throws IOException {
+	public static String format(String json) throws IOException {
 		 ObjectMapper mapper = new ObjectMapper();
 		 Object JSON = mapper.readValue(jsonString, Object.class);
 		 String json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(JSON);
